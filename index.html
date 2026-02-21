@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParityDeals</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    .navbar{
+	position: fixed;
+	top: 50px;
+	left: 0;
+	z-index: 1;
+	right: 0;
+	border-bottom:1px solid #ddd;
+	}
+	.vv{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	right: 0;
+	border-bottom:1px solid #ddd;
+	;
+	}
+	.main-heading {
+      font-size: 4rem; /* Adjust this value for desired size */
+      font-weight: bold;
+    }
+	.section-key-features{
+	background-image: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgb(255, 255, 255);
+	
+	}
+	.kk {
+	font-size: 1.5rem; /* Adjust this value for desired size */
+      font-weight: bold;
+	}
+	.trusted-companies{
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	}
+	.trusted-companies img {
+	width: 180px;
+	height: auto;
+	margin: 10px;
+	}
+	
+	.logo-section {
+      background-color: #000; /* Black background */
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .logo-section h5 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo-img {
+      max-width: 250px; /* Increased size for logos */
+      height: auto;
+      margin: 200px 300px; /* Adjusted spacing */
+    }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+	.content-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f9f9f9; /* Light background */
+    }
+    .content-section h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .avatar-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Space between avatars */
+    }
+    .avatar-grid img {
+	  max-width: 120px;
+	  margin: 40px,30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%; /* Circular avatars */
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+	.shsh{
+      font-size: 0.5rem; /* Adjust this value for desired size */
+	}
+	.kashish {
+      font-size: 4rem; /* Adjust this value for desired size */
+      font-weight: bold;
+	  margin: 40px,30px;
+	 
+	  
+    }
+	.section-geographical-Pricing
+	.section-header{
+	max-width: 930px
+	}
+	.section-geographical-Pricing
+	{
+	margin-bottom: 0;
+	padding-top: 80px
+	}
+	.section-geographical-Pricing-content
+	{
+	padding top: 66px;
+	padding right: 30px;
+	padding bottom: 66px;
+	padding left: 30px;
+	}
+	.section-geographical-Pricing-inner{
+	background-image: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgb(250, 246, 238);
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+	border-bottom-right-radius: 24px;
+	border-left-right-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+    .section-geographical-pricing-footer{
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-left: 24px;
+	padding-bottom: 24px;
+	background-color: #e7e1cf;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	}
+	
+	.section-geographical-Pricing-footer
+	.btn-dark{
+	background-image: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgb(67, 53, 1);
+	}
+	.btn-brand-size{
+	padding-top: 10px;
+	padding-right: 24px;
+	padding-left: 10px;
+	padding-bottom: 24px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-left-right-radius: 12px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	font-size- 18px;
+	line-height: 28px;
+	}
+	
+	.section-cleint-review{
+	padding top: 6opx;
+	padding-bottom:  60px;
+	background-image: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background color: rgb(247, 250, 252);  
+	box-sizing: border-box;
+	}
+	
+	fluid-max.container-xxl{
+	max-width:  1440px;
+	}
+	.container-xxl{
+	    --bs-gutter-x: 48px;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+	
+	
+	 .merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.cc{
+	z-index: -100;
+}
+</style>
+  
+  
+  
+  </head>
+
+<body>
+
+  <!-- Navbar -->
+<div class=" vv bg-dark text-white py-2 text-center">
+    <span>Grow your subscription revenue with an all-in-one monetization platform.</span>
+    <a href="#" class="btn btn-outline-light btn-sm ms-2">Learn more <span>&#8594;</span></a>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><svg width="211" height="40" viewBox="0 0 211 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4018 1.10483c6.3196.0 11.4019 4.81705 11.4019 10.82727.0 6.0103-5.0823 10.8274-11.4019 10.8274C8.88282 22.7595 6.54058 21.964 4.64028 20.6824V30.9352H0V11.9321C0 5.92188 5.08221 1.10483 11.4018 1.10483zm0 17.36787c3.7564.0 6.7616-2.8725 6.7616-6.5406.0-3.62379-3.0052-6.49634-6.7616-6.49634-3.80058.0-6.76152 2.87255-6.76152 6.49634.0 3.6681 2.96094 6.5406 6.76152 6.5406z" fill="#171923"></path><path d="M35.4298 8.3967c5.9219.0 9.8109 4.0216 9.8109 10.1202V30.9352H40.9981l-.0884-3.3145c-1.9887 2.2981-4.7728 3.7564-8.2199 3.7564-4.7287.0-8.1315-3.0935-8.1315-7.1151.0-4.6402 3.8006-7.2476 10.4295-7.2476 1.812.0 3.6681.1325 5.5684.4419C40.1584 14.1418 37.9488 12.1089 34.5017 12.1089c-2.4306.0-4.7286.839700000000001-6.629 2.5632l-1.9886-2.5632c2.077-2.20963 5.4799-3.7122 9.5457-3.7122zM33.5295 28.0626c4.0215.0 6.9825-3.2261 7.0709-7.6896C38.7443 19.9753 36.8881 19.7101 35.1204 19.7101c-3.9774.0-6.2312 1.5468-6.2312 4.2868.0 2.298 1.8561 4.0657 4.6403 4.0657z" fill="#171923"></path><path d="M54.0009 12.2415c1.8561-2.0329 4.5961-3.40287 8.1315-3.40287V12.9044c-5.038.0-7.8663 3.0935-7.8663 6.9825V30.9352H49.6258V8.83863h4.1983C53.9125 9.94346 53.9567 11.0925 54.0009 12.2415z" fill="#171923"></path><path d="M67.1163 5.61253c-1.4584.0-2.4307-1.06063-2.4307-2.07708C64.6856 2.47482 65.6579 1.41418 67.1163 1.41418 68.5746 1.41418 69.5469 2.47482 69.5469 3.53545 69.5469 4.5519 68.5746 5.61253 67.1163 5.61253zM64.774 30.9352V8.83863h4.6403V30.9352H64.774z" fill="#171923"></path><path d="M86.9079 26.3833l2.077 2.6516C87.394 30.5817 85.096 31.3771 82.577 31.3771 77.8483 31.3771 74.0477 28.372 74.0477 24.2178V2.65159H78.688V8.83863h7.336V12.7276H78.688V23.7317c0 2.5632 2.1212 3.8448 4.596 3.8448C84.875 27.5765 86.1124 27.1346 86.9079 26.3833z" fill="#171923"></path><path d="M118.585 1.54676C127.158 1.54676 134.052 8.13154 134.052 16.2189 134.052 24.3504 127.158 30.9352 118.585 30.9352h-8.309V1.54676h8.309zm0 25.49944C124.595 27.0462 129.412 22.2291 129.412 16.2189 129.412 10.2528 124.595 5.43576 118.585 5.43576H114.917V27.0462H118.585z" fill="#171923"></path><path d="M159.143 18.296C159.275 19.2682 159.319 20.0637 159.275 20.9475H141.068C141.598 24.704 144.338 27.4439 148.227 27.4439 151.32 27.4439 153.53 26.074 154.856 24.0411l3.535 1.8119C156.358 29.1675 152.735 31.3771 147.873 31.3771c-6.363.0-11.49-5.1264-11.49-11.4902C136.383 13.5231 141.51 8.3967 147.873 8.3967 153.663 8.3967 158.48 12.6834 159.143 18.296zm-11.27-6.5848C144.249 11.7112 141.642 14.3186 141.068 18.1192h13.611C154.635 17.5889 154.546 17.0144 154.414 16.5724 153.618 13.6557 151.011 11.7112 147.873 11.7112z" fill="#171923"></path><path d="M172.023 8.3967C177.945 8.3967 181.834 12.4183 181.834 18.5169V30.9352h-4.243L177.503 27.6207C175.514 29.9188 172.73 31.3771 169.283 31.3771 164.554 31.3771 161.151 28.2836 161.151 24.262c0-4.6402 3.80099999999999-7.2476 10.43-7.2476C173.393 17.0144 175.249 17.1469 177.149 17.4563 176.751 14.1418 174.542 12.1089 171.095 12.1089 168.664 12.1089 166.366 12.9486 164.466 14.6721l-1.989-2.5632C164.554 9.89927 167.957 8.3967 172.023 8.3967zM170.122 28.0626C174.144 28.0626 177.105 24.8365 177.193 20.373 175.337 19.9753 173.481 19.7101 171.713 19.7101 167.736 19.7101 165.482 21.2569 165.482 23.9969 165.482 26.2949 167.338 28.0626 170.122 28.0626z" fill="#171923"></path><path d="M186.219 30.9352V0H190.859V30.9352H186.219z" fill="#171923"></path><path d="M202.342 31.3771C198.232 31.3771 194.918 28.9907 194.034 25.3669l3.447-1.2374C198.232 26.2949 200.089 27.8417 202.033 27.8417 203.845 27.8417 205.348 26.4275 205.348 24.6156 205.348 23.0688 204.066 21.8756 201.459 21.0359 197.349 19.5334 195.271 17.2353 195.271 14.1418c0-3.4029 3.006-5.7451 6.762-5.7451C205.436 8.3967 208.176 10.2086 209.148 13.1254L205.834 14.7605C205.303 13.037 203.845 11.7996 202.254 11.7996 200.84 11.7996 199.691 12.9044 199.691 14.186c0 1.37 1.06 2.3422 3.447 3.1377C207.513 18.8705 210.076 20.9475 210.076 24.6156c0 3.7564-3.358 6.7615-7.73399999999998 6.7615z" fill="#171923"></path><path d="M107.507 8.66707 104.016 26.1676l-.884 4.6402C101.939 37.3042 96.9895 40 90.3605 40V36.3762c4.5519.0 7.3361-1.9445 8.0432-4.9939L98.4479 31.2056h-.3536C96.3266 31.2056 94.7772 30.5046 93.7166 29.3556 93.0095 28.5601 92.4376 27.4492 92.2166 26.2118L91.4212 22.2344 89.2999 11.5396 88.7254 8.66707h4.7728L93.6308 9.37416 93.7192 9.86029 95.8405 21.3947 95.9289 21.8808 96.5918 25.4605C96.7685 26.2559 97.2988 26.6537 98.0501 26.6537H98.1385C98.8898 26.6537 99.4201 26.2559 99.5969 25.4605l.6631-3.5355L100.348 21.4389l2.121-11.3576L102.558 9.59419 102.735 8.66707H107.507z" fill="#171923"></path><path d="M118.585 1.54676C127.158 1.54676 134.052 8.13154 134.052 16.2189 134.052 24.3504 127.158 30.9352 118.585 30.9352h-8.309V1.54676h8.309zm0 25.49944C124.595 27.0462 129.412 22.2291 129.412 16.2189 129.412 10.2528 124.595 5.43576 118.585 5.43576H114.917V27.0462H118.585z" fill="#171923"></path></svg></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Dropdown for Solution -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="solutionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Solution
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="solutionDropdown">
+              <li><a class="dropdown-item" href="#">Online Courses</a></li>
+              <li><a class="dropdown-item" href="#">SaaS</a></li>
+              <li><a class="dropdown-item" href="#">Newsletter</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown for Features -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+              <li><a class="dropdown-item" href="#">Celebratory Promotion</a></li>
+              <li><a class="dropdown-item" href="#">Price Localization</a></li>
+              <li><a class="dropdown-item" href="#">Flash Deals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-dark me-2" href="#">Book a Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="section section-key-features" id="our-solution"><div class="text-center"><div class="container">
+  <div class="d-flex row justify-content-center style=background: radial-gradient(ellipse at 49% 54%,rgba(230, 172, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))">
+  <div class="text-center my-5" style="padding-top:6em">
+  
+    <h1 class="main-heading merriweather-black">Price Smarter, Sell Bigger!</h1>
+    <p class="mt-3">Optimize your product pricing across countries to maximize sales.<br>
+    Capture 85% of the untapped market with location-based dynamic pricing.</p>
+    <div class="mt-4">
+    
+      <a href="#" class="btn btn-outline-dark me-2">Book a Demo</a>
+      <a href="#" class="btn btn-dark">Get Started for Free</a>
+	 
+    </div>
+	</div>
+	</div>
+ 
+<div class="trusted-companies text-center">
+<div class="logo-section">
+
+	<h6 class="pb-5 merriweather-black">Trusted by the top modern companies</h6>
+	<div class="logo-container">
+      <div class="row justify-content-center">
+        <!-- Company Logos -->
+        
+          <img src="draftbit-logo.svg" alt="Draftbit" class="img-fluid">
+        
+        
+          <img src="amie-logo.svg" alt="Amie" class="img-fluid">
+        
+        
+          <img src="tldv-logo.svg" alt="tl;dv" class="img-fluid">
+        
+        
+          <img src="akiflow-logo.svg" alt="Akiflow" class="img-fluid">
+		  
+          <img src="opteo-logo.svg" alt="Opteo" class="img-fluid">
+			<div class="row justify-content-center mt-3">
+          <img src="no-code-mba-logo.svg" alt="No Code MBA" class="img-fluid">
+       
+          <img src="ad-creative.svg" alt="AdCreative.ai" class="img-fluid">
+        
+          <img src="jenni.svg" alt="Jenni" class="img-fluid">
+        
+          <img src="stremline-logo.svg" alt="Streamline" class="img-fluid">
+        
+          <img src="microconf-logo.svg" alt="MicroConf" class="img-fluid">
+        
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="content-section text-center">
+  <h2>Discover why leading creators and educators choose ParityDeals!</h2>
+  <div class="avatar-grid">
+	<div class="d-flex align-items-center border rounded-pill">
+		<img src="conor.png" alt="Conor Harris">
+		<p>Conor Harris</p>
+	</div>
+	
+    <div class="d-flex align-items-center border rounded-pill">
+    <img src="ash.png" alt="Ash Maurya">
+	<p>Ash Maurya</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="matt.png" alt="Matt Grey">
+	<p>Matt Grey</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="kyle.png" alt="kyle Cook">
+	<p>Kyle Cook</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="shelby.png" alt="Shelby Wolpa">
+	<p>Shelby Wolpa </p>
+	</div>
+	
+	
+    <div class="d-flex align-items-center border rounded-pill">
+	<img src="benn.png" alt="Ben Murray">
+	<p>Ben Murray</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="seth.png" alt="Seth Kramer">
+	<p>Seth Kramer</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="pau.png" alt="pau Labarta">
+	<p>Pau Labarta</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="luca.png" alt="luca restagno">
+	<p>Luca Restagno</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="sonal.png" alt="sonal Bhaskaran">
+	<p>Sonal Bhaskaran</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="kyleee.png" alt="kyle prinsloo">
+	<p>Kyle Prinsloo</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="emma.png" alt="Emma hubbard">
+	<p>Emma Hubbard</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="yan.png" alt="Yan">
+	<p>Yan</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="michael.png" alt="michael">
+	<p>michael</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="hassan.png" alt="Hassan">
+	<p>Hassan</p>
+	</div>
+	
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="jason.png" alt="Jason Chin">
+	<p>Jason Chin</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="swizec.png" alt="Swizec">
+	<p>Swizec</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="dann.png" alt="Dann petty">
+	<p>Dann Petty</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="erica.png" alt="erica schneider">
+	<p>Erica Schneider</p>
+	</div>
+
+<div class="d-flex align-items-center border rounded-pill">
+    <img src="cheraine.png" alt="cheraine escott">
+	<p>Cheraine Escott</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="kevon.png" alt="kevon">
+	<p>Kevon</p>
+	</div>
+	
+	<div class="d-flex align-items-center border rounded-pill">
+    <img src="mushtaq.png" alt="mushtaq Bilal">
+	<p>Mushtaq Bilal</p>
+	</div>
+  
+
+    <div class="d-flex align-items-center border rounded-pill">
+    <img src="robert.png" alt="robert menza">
+	<p>Robert Menza</p>
+	</div>
+	</div>
+	<div class="mt-4" style="padding-top:4em">
+    
+      <a href="#" class="btn btn-outline-dark me-2 text-center">Book a Demo</a>
+      <a href="#" class="btn btn-dark text-center">Get Started for Free</a>
+	 
+    </div>
+	</div>
+	<section class="section-geographical-Pricing">
+	<div class="container-xxl">
+  <div class="section-geographical-Pricing-inner">
+  <div class="section-header text-center">
+    <h2 class="kashish merriweather-black text-center">Price your product on each market willingness to pay
+</h2>
+    <p class="Inter mt-3" "text-center" style="font-size:24px">Provide optimal pricing to your customers by dynamically localizing your product pricing.<br>
+	Dynamic pricing is the most powerful way to boost your sales revenue growth</p>
+	</div>
+	<div class="justify-content-center text-center">
+	<img src="geographical.svg" alt="Draftbit" class="img-fluid">
+	<div class="section-geographical-Pricing-content">
+	</div>
+	<div class="section-geographical-pricing-footer home-btn-wrap">
+	<a href="#" class="btn btn-outline-dark me-2 text-center">Book a Demo</a>
+      <a href="#" class="btn btn-dark text-center">Get Started for Free</a>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	</section>
+	<div class=" cc d-flex flex-column flex-xl-row align-items-stretch text-center my-5 py-5 px-5 gap-3"
+    style="background-color: #f6fafd">
+    <div class="card container py-5 rounded-4 " style="width: 29rem; border:none;">
+      <div class="card-body d-flex flex-column">
+        <img src="invertedlogo-svg.svg" alt="logo" style="height:50px; width:50px;">
+        <p class="my-5 fs-5 merriweather-regular text-start">The easiest solution to add purchasing power parity (PPP) functionality to your application
+		is by installing ParityDeals from our app marketplace."
+          </p>
+        <div class="d-flex ">
+          <img src="stripe.svg" alt="ben-meer " style="height:60px; width:60px;">
+          <div class="mx-2">
+            <p class="m-0 p-0 fs-5">Stripe</p>
+            <p class="m-0 p-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card container py-5 rounded-4" style="width: 29rem; border:none;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <img src="invertedlogo-svg.svg" alt="logo" style="height:50px; width:50px;">
+        <p class="my-5 fs-5 merriweather-regular text-start">Thanks to ParityDeals, we managed to increase our revenue by 30% by 
+		making our product accessible to our global audience."
+          </p>
+        <div class="d-flex ">
+          <img src="jordan-hughes.png" alt="ben-meer " style="height:60px; width:60px;">
+          <div class="mx-2">
+            <p class="m-0 p-0 fs-5">Jordan-Hughes</p>
+            <p class="m-0 p-0">@jordanphughes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card container py-5 rounded-4" style="width: 29rem;border:none;">
+      <div class="card-body d-flex flex-column">
+        <img src="invertedlogo-svg.svg " alt="logo" style="height:50px; width:50px;">
+        <p class="my-5 fs-5 merriweather-regular text-start">ParityDeals offers a seamless way to integrate geographical pricing into
+		your website. Their dashboard is a valuable asset for boosting marketing."
+          </p>
+        <div class="d-flex ">
+          <img src="adrian-hajdin.png" alt="ben-meer " style="height:60px; width:60px;">
+          <div class="mx-2">
+            <p class="m-0 p-0 fs-5">Adrian-Hajdin</p>
+            <p class="m-0 p-0">@jasmastery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+	
+	 <div class="container rounded-4 pt-5 d-flex my-5 text-left" style="background-color:#D9EAFF">
+    <div class="text ms-3 col-md-6 text-start" style="color:#0049A3">
+      <span class="section rounded-4 d-flex p-3 ms-3" style="height: 60px; width: 60px; background-color: #0049A3;"><img
+          src="revenuelogo.png" alt="logo of network"></span>
+      <h3 class="merriweather-black-212 pt-3 mt-2">BOOST REVENUE GROWTH</h3>
+      <h1 class="merriweather-black-21 pt-3">Pricing software that could boost your revenue growth by more than 50%
+	  <svg width="84" height="52" viewBox="0 0 84 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  <path d="M59.5603.0c0 12.3429-10.6839 23.3143-24.0388 23.3143 13.3549.0 24.0388 10.9714 24.0388 24.6857.0-13.7143 10.6839-24.6857 24.0387-24.6857C68.9087 23.3143 59.5603 12.3429 59.5603.0z" fill="#d59240">
+	  </path>
+	  <path d="M14.4875 24c0 7.2-6.23231 13.6-14.022656 13.6C8.25519 37.6 14.4875 44 14.4875 52c0-8 6.2322-14.4 14.0226-14.4-8.5694.0-14.0226-6.4-14.0226-13.6z" fill="#d59240">
+	  </path></svg></h1>
+      <h3 class="inter-black1 pt-3">Digital products are not accessible to 85% of the internet users due to different
+        Purchasing Power Parity</h3>
+      <div class="inter-black1 pt-3">
+        <h4 class="inter-black1 mt-3"><span class="me-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5"></path><path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3"></path></svg>Expand your product's
+          global reach by location-based pricing</h4>
+        <h4 class="inter-black1 mt-3"><span class="me-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5"></path><path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3"></path></svg>Charge more prices for
+          higher-income economies</h4>
+        <h4 class="inter-black1 mt-3"><span class="me-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5"></path><path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3"></path></svg>Engage inactive
+          customers with dynamic pricing & discounts</h4>
+        <button class="btn btn-light border-1 inter-black12 ms-5 my-4 px-3 py-2 rounded-3"
+          style="color:#0049A3; border-color: #0049A3;">Book a Demo</button>
+        <button class="btn btn-light inter-black12 ms-2 my-4 px-3 py-2 rounded-3"
+          style="background-color:#0049A3; color:white">Get started for free -></button>
+      </div>
+    </div>
+    <div>
+      <img src="revenue-illustration.svg" alt="revenue image">
+    </div>
+  </div>
+  
+  <div class="container rounded-4 pt-5 d-flex my-5 text-left" style="background-color:#E2F0E9">
+    <div class="text ms-3 col-md-6 text-start " style="color:#34835A">
+      <span class="section rounded-4 d-flex p-3 ms-3" style="height: 60px; width: 60px; background-color: #34835A;"><img
+          src="zero.png" alt="logo of network"></span>
+      <h3 class="merriweather-black-212 pt-3 mt-2">ZERO CODE NEEDED</h3>
+      <h1 class="merriweather-black-21 pt-3">No-code magic setup
+	  <svg width="84" height="52" viewBox="0 0 84 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  <path d="M59.5603.0c0 12.3429-10.6839 23.3143-24.0388 23.3143 13.3549.0 24.0388 10.9714 24.0388 24.6857.0-13.7143 10.6839-24.6857 24.0387-24.6857C68.9087 23.3143 59.5603 12.3429 59.5603.0z" fill="#d59240">
+	  </path>
+	  <path d="M14.4875 24c0 7.2-6.23231 13.6-14.022656 13.6C8.25519 37.6 14.4875 44 14.4875 52c0-8 6.2322-14.4 14.0226-14.4-8.5694.0-14.0226-6.4-14.0226-13.6z" fill="#d59240">
+	  </path></svg></h1>
+      <h3 class="inter-black1 pt-3">Setup dynamic pricing for your product/service without the help of a developer</h3>
+      <div class="inter-black1 pt-3">
+        <h4 class="inter-black1 mt-3"><span class="me-3">
+		<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5">
+		</path>
+		<path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3">
+		</path>
+		</svg>
+          Automatically display
+          discount banners by the users' location</h4>
+        <h4 class="inter-black1 mt-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5">
+		</path>
+		<path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3">
+		</path>
+		</svg>Manage pricing rules
+          directly via ParityDeals Dashboard</h4>
+        <h4 class="inter-black1 mt-3"><span class="me-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5">
+		</path>
+		<path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3">
+		</path>
+		</svg>Easy to use API for more
+          customization</h4>
+        <button class="btn btn-light border-1 inter-black12 ms-5 my-4 px-3 py-2 rounded-3"
+          style="color:#34835A; border-color: #34835A;">Book a Demo</button>
+        <button class="btn btn-light inter-black12 ms-2 my-4 px-3 py-2 rounded-3"
+          style="background-color:#34835A; color:white">Get started for free -></button>
+      </div>
+    </div>
+    <div>
+      <img src="no-code-illustration.svg" alt="revenue image">
+    </div>
+  </div>
+  <div class="container rounded-4 pt-5 d-flex my-5 text-left" style="background-color:#F0E2E2">
+    <div class="text ms-3 col-md-6 text-start " style="color:#6C3838">
+      <span class="section rounded-4 d-flex p-3 ms-3" style="height: 60px; width: 60px; background-color: #6C3838;"><img
+          src="dashboard.png" alt="logo of network"></span>
+      <h3 class="merriweather-black-212 pt-3 mt-2">UNIFIED DASHBOARD
+	  <svg width="84" height="52" viewBox="0 0 84 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  <path d="M59.5603.0c0 12.3429-10.6839 23.3143-24.0388 23.3143 13.3549.0 24.0388 10.9714 24.0388 24.6857.0-13.7143 10.6839-24.6857 24.0387-24.6857C68.9087 23.3143 59.5603 12.3429 59.5603.0z" fill="#d59240">
+	  </path>
+	  <path d="M14.4875 24c0 7.2-6.23231 13.6-14.022656 13.6C8.25519 37.6 14.4875 44 14.4875 52c0-8 6.2322-14.4 14.0226-14.4-8.5694.0-14.0226-6.4-14.0226-13.6z" fill="#d59240">
+	  </path></svg></h3>
+      <h1 class="merriweather-black-21 pt-3">Monitor your sales performance in action</h1>
+      <h3 class="inter-black1 pt-3">Stay close pulse to sales performance by discount offers, locations, and products. Optimize and iterate to drive revenue growth</h3>
+      <div class="inter-black1 pt-3">
+        <h4 class="inter-black1 mt-3"><span class="me-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5">
+		</path>
+		<path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3">
+		</path>
+		</svg>Target global audience by their willingness to pay
+          discount banners by the users' location</h4>
+        <h4 class="inter-black1 mt-3"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path opacity=".4" d="M19.064 2.33301H8.94899c-3.95501.0-6.61501 2.77666-6.61501 6.90667V18.7713c0 4.1184 2.66 6.895 6.61501 6.895H19.064c3.955.0 6.6033-2.7766 6.6033-6.895V9.23968c0-4.13001-2.6483-6.90667-6.6033-6.90667z" fill="#3d88e5">
+		</path>
+		<path d="M12.6161 17.7892C12.3548 17.7892 12.0934 17.69 11.8939 17.4905L9.12542 14.722C8.72642 14.323 8.72642 13.6767 9.12542 13.2789 9.52442 12.8799 10.1696 12.8787 10.5686 13.2777l2.0475 2.0475 4.816-4.816C17.8311 10.1102 18.4763 10.1102 18.8753 10.5092 19.2743 10.9082 19.2743 11.5545 18.8753 11.9535l-5.537 5.537C13.1388 17.69 12.8774 17.7892 12.6161 17.7892z" fill="#0049a3">
+		</path>
+		</svg>Analyze users buying patterns by their geography, purchase timing, and the best discount percentage
+          directly via ParityDeals Dashboard</h4>
+        <button class="btn btn-light border-1 inter-black12 ms-5 my-4 px-3 py-2 rounded-3"
+          style="color:#6C3838; border-color: #6C3838;">Book a Demo</button>
+        <button class="btn btn-light inter-black12 ms-2 my-4 px-3 py-2 rounded-3"
+          style="background-color:#6C3838; color:white">Get started for free -></button>
+      </div>
+    </div>
+    <div>
+      <img src="dashboard-illustration.svg" alt="revenue image">
+    </div>
+  </div>
+
+ <!--new-->
+  <div class="d-flex justify-content-center py-5">
+    <h1 class="merriweather-bold w-50 text-center">One product for all your pricing strategies</h1>
+  </div>
+
+
+  <div class="d-flex flex-column flex-xl-row mx-3 px-5 gap-5 my-5">
+    <div class="container py-5 ps-5 rounded-4  mb-0 W-50" style="background-color:#e5f0e2; color:#406c43;">
+      <img src="dynamic-discount.svg" class="card-img-top" alt="dynamic-discount" style="width:20rem;">
+      <div class="card-body ">
+
+        <h3 class="card-text py-2 ">Holiday and celebratory promotions</h3>
+        <p class="card-text fs-5">Provide discounts for festivals, holidays, special occasions, or
+          even birthdays! 😄 Learn more
+        </p>
+      </div>
+    </div>
+    <div class="container pt-5 ps-5 rounded-4 W-50" style=" background-color:#e3e2f0; color:#453a5c;">
+      <img src="parity-discount.svg" class="card-img-top" alt="parity-discount" style="width:20rem;">
+      <div class="card-body">
+        <p class="card-text">
+        <h3>Price localization</h3> Setup optimal pricing for different countries to suit their purchasing parity
+        power. Learn more
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-xl-row mx-3 px-5 gap-5 ">
+    <div class="container py-5 ps-5 rounded-4 mb-0 W-50" style="background-color:#d9eafe; color:#0345a4;">
+      <img src="unified-view.svg" class="card-img-top" alt="dynamic-discount" style="width:20rem;">
+      <div class="card-body ">
+
+        <h3 class="card-text py-2 ">Flash promotionss</h3>
+        <p class="card-text fs-5">Run time-based deals to create an urgency and increase sales velocity. Learn more
+        </p>
+      </div>
+    </div>
+    <div class="container pt-5 ps-5 rounded-4 W-50" style=" background-color:#f0e2e2; color:#723928;">
+      <img src="integrations.svg" class="card-img-top" alt="parity-discount" style="width:20rem;">
+      <div class="card-body">
+        <p class="card-text">
+        <h3>Limited stock promotions</h3> Experiment with dynamic pricing discounts by running sales on limited
+        product stock
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container rounded-bottom-4 d-flex justify-content-center gap-3 py-5">
+    <button class="btn btn-light border border-dark inter-black12 my-4 px-3 py-2 rounded-3" style="color:#433501;">Book
+      a Demo</button>
+    <button class="btn btn-light border border-dark inter-black12 my-4 px-3 py-2 rounded-3"
+      style="background-color:#000000; color:white">Get started for free &rarr; </button>
+  </div>
+  
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
